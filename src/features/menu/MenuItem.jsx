@@ -2,10 +2,10 @@ import { formatCurrency } from "../../utils/helpers";
 
 function MenuItem({ pizza }) {
     const { id, name, unitPrice, ingredients, soldOut, imageUrl } = pizza;
- 
-    console.log(id)
+
+    // console.log(id)
     return (
-        <li>
+        <li key={id}>
             <img src={imageUrl} alt={name} />
             <div>
                 <p>{name}</p>
