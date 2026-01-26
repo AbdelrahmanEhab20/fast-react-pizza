@@ -4,7 +4,7 @@ import Error from "./ui/Error"
 import AppLayout from "./ui/AppLayout"
 import Menu from "./features/menu/Menu"
 import Cart from "./features/cart/Cart"
-import CreateOrder from "./features/order/CreateOrder"
+import CreateOrder, { action as addNewOrderAction } from "./features/order/CreateOrder"
 import Order from "./features/order/Order"
 
 // loader function to fetch menu data
@@ -37,7 +37,8 @@ const router = createBrowserRouter([{
   },
   {
     path: "/order/new",
-    element: <CreateOrder />
+    element: <CreateOrder />,
+    action: addNewOrderAction
   }]
 }
 ])
