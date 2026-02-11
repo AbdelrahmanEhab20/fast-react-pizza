@@ -7,9 +7,7 @@ import Button from "../../ui/Button";
 const isValidPhone = (str) =>
   /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/.test(
     str,
-  );
-console.log(isValidPhone("1234567")); // true
-console.log(isValidPhone("123-abc-7890")); // false
+  ); 
 const fakeCart = [
   {
     pizzaId: 12,
