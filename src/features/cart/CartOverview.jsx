@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+ import LinkButton from "../../ui/LinkButton";
 
 function CartOverview() {
     return (
@@ -9,7 +9,7 @@ function CartOverview() {
                 <span>$23.45</span>
             </p>
             {/* <a href="#">Open cart &rarr;</a> */}
-            <Link to="/cart">Open cart &rarr;</Link>
+            <LinkButton to="/cart">Open cart &rarr;</LinkButton>
         </div>
     );
 }
