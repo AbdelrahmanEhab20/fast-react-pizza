@@ -5,6 +5,11 @@
 @theme {
   /* Overwrite the default sans font so you don't have to add classes everywhere */
   --font-sans: "SN Pro", ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom height */
+  /* OR create a specific utility class name */
+  /* --height-dvh: 100dvh; */
+  --spacing-screen: 100dvh;
 }
 
 @layer components {
